@@ -11,7 +11,7 @@ public class Solution {
         for(int i = 0; i < A.length; i++) {
             for(int j = m; j >= 0; j--) {
                 if(j - A[i] >= 0 && opt[j - A[i]])
-                    opt[j] = opt[j - A[i]];
+                    opt[j] = true;
             }
         }
         for(int i = m; i >= 0; i--)
